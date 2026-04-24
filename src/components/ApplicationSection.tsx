@@ -77,10 +77,12 @@ export default function ApplicationSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <p className="text-[#f97316] text-xs font-semibold uppercase tracking-widest mb-2">{t.applications.tag}</p>
-          <h2 className="text-4xl font-black text-white">{t.applications.title}</h2>
+          {/* AUDIT #1.1 — major section: text-4xl sm:text-5xl */}
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">{t.applications.title}</h2>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
+        {/* AUDIT #4.2 — gap-3 → gap-4 to match rest of the site's grid rhythm */}
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
           {apps.map((app, i) => (
             <motion.div
               key={app.title}
@@ -91,19 +93,20 @@ export default function ApplicationSection() {
             >
               <Link
                 href={appConfig[i].href}
-                className={`group relative flex flex-col justify-between overflow-hidden h-52 sm:h-64 bg-gradient-to-br ${appConfig[i].gradient} ${appConfig[i].accent} transition-all duration-500 p-6`}
+                className={`group relative flex flex-col justify-between overflow-hidden h-52 sm:h-64 bg-gradient-to-br ${appConfig[i].gradient} ${appConfig[i].accent} transition-all duration-500 p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f97316] focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950`}
               >
                 <div className="absolute -right-4 -bottom-4 w-36 h-36 sm:w-44 sm:h-44 text-white/5 group-hover:text-white/10 transition-all duration-500 group-hover:scale-110 group-hover:-rotate-6">
                   {appConfig[i].icon}
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">
+                {/* AUDIT #3.1 — text-[10px] → text-xs */}
+                <span className="text-xs font-bold uppercase tracking-widest text-white/50">
                   {app.tag}
                 </span>
                 <div className="relative">
-                  <h3 className="text-white font-black text-xl sm:text-2xl leading-tight mb-3">
+                  <h3 className="text-white font-extrabold text-xl sm:text-2xl leading-tight mb-3 tracking-tight">
                     {app.title}
                   </h3>
-                  <div className="flex items-center gap-1.5 text-white/40 group-hover:text-[#f97316] transition-colors duration-300">
+                  <div className="flex items-center gap-1.5 text-white/50 group-hover:text-[#f97316] transition-colors duration-300">
                     <span className="text-xs font-semibold">{t.applications.explore}</span>
                     <svg className="w-3.5 h-3.5 translate-x-0 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
