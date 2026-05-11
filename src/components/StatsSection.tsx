@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { m, useInView } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 const statValues = [
@@ -43,11 +43,13 @@ export default function StatsSection() {
   const { t } = useLanguage()
 
   return (
-    <section className="bg-[#f97316]" ref={ref}>
+    // AUDIT #2.1 — background swapped from #f97316 (2.82:1) to #b45309 (amber-700, 4.8:1)
+    // for WCAG AA compliance on white-on-orange stat labels.
+    <section className="bg-[#b45309]" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {statValues.map((stat, i) => (
-            <motion.div
+            <m.div
               key={i}
               className="text-center"
               initial={{ opacity: 0, y: 20 }}
@@ -57,8 +59,9 @@ export default function StatsSection() {
               <p className="text-4xl font-black text-white">
                 <CountUp target={stat.value} suffix={stat.suffix} />
               </p>
-              <p className="text-white/80 text-sm mt-1">{t.stats.labels[i]}</p>
-            </motion.div>
+              {/* AUDIT #2.1 — was text-white/80 (fails AA). Now white @ full opacity. */}
+              <p className="text-white text-sm mt-1">{t.stats.labels[i]}</p>
+            </m.div>
           ))}
         </div>
       </div>

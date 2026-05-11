@@ -70,6 +70,39 @@ export default function ContactContent() {
           </div>
         </div>
       </section>
+
+      <section className="py-20 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div>
+              <p className="text-[#f97316] text-xs font-semibold uppercase tracking-widest mb-3">{c.distributor.tag}</p>
+              <h2 className="text-4xl font-black text-white mb-6 leading-tight">{c.distributor.title}</h2>
+              <p className="text-gray-400 text-base leading-relaxed mb-8">{c.distributor.body}</p>
+              <a
+                href={`mailto:stanley@mesttire.com?subject=Distributor%20Application&body=Hi%2C%20I%20am%20interested%20in%20becoming%20a%20Mest%20Tire%20distributor.%0A%0ACompany%3A%0ARegion%2FTerritory%3A%0ACurrent%20product%20lines%3A%0AAnnual%20tire%20volume%3A`}
+                className="inline-block bg-[#f97316] hover:bg-[#ea580c] text-white font-bold px-8 py-4 text-sm transition-colors"
+              >
+                {c.distributor.cta}
+              </a>
+              <p className="text-gray-500 text-xs mt-3">{c.distributor.ctaNote}</p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {c.distributor.benefits.map((benefit) => (
+                <div key={benefit.title} className="bg-gray-800 border border-gray-700 p-6">
+                  <div className="w-8 h-8 bg-[#f97316]/10 border border-[#f97316]/30 flex items-center justify-center mb-4">
+                    <svg className="w-4 h-4 text-[#f97316]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <h3 className="text-white font-bold text-sm mb-2">{benefit.title}</h3>
+                  <p className="text-gray-400 text-xs leading-relaxed">{benefit.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

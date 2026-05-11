@@ -89,8 +89,8 @@ export default function ContactForm() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-gray-600 text-xs font-semibold uppercase tracking-wide mb-1.5">{f.product}</label>
-          <select name="product" value={form.product} onChange={handleChange} className={inputClass}>
+          <label htmlFor="product" className="block text-gray-600 text-xs font-semibold uppercase tracking-wide mb-1.5">{f.product}</label>
+          <select id="product" name="product" value={form.product} onChange={handleChange} className={inputClass}>
             <option value="">{f.selectProduct}</option>
             {productOptions.map((opt) => (
               <option key={opt} value={opt}>{opt}</option>

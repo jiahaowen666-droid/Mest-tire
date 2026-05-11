@@ -21,6 +21,11 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     }
   }, [])
 
+  useEffect(() => {
+    document.documentElement.lang = lang
+    document.documentElement.dir = 'ltr'
+  }, [lang])
+
   function setLang(l: Lang) {
     setLangState(l)
     localStorage.setItem('mest-lang', l)

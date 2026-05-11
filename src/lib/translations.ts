@@ -162,14 +162,17 @@ export const translations = {
         {
           title: 'Reduce Costs',
           body: 'Factory-direct pricing, transparent quotes, no intermediary markups. We manufacture what we sell — so you pay for the tire, not the layers around it.',
+          badge: 'Factory-direct · Zero middlemen',
         },
         {
           title: 'Enrich Your Product Line',
           body: '11 specialty categories and custom engineering capability. Need a size that nobody stocks? We build it. Expanding into a new application? We cover it.',
+          badge: '11 categories + custom molds',
         },
         {
           title: 'Avoid Downtime',
           body: 'Consistent quality, ISO 9001 certified, batch test reports with every shipment. 25–35 day lead times on standard orders. We ship when we say we will.',
+          badge: 'ISO 9001 · 25–35 day lead time',
         },
       ],
       proof: [
@@ -178,6 +181,18 @@ export const translations = {
         { value: '50+', label: 'Countries served' },
         { value: '24h', label: 'Quote response' },
       ],
+      comparison: {
+        tag: 'The Real Difference',
+        title: 'Mest vs. The Alternative',
+        themHeader: 'Most Suppliers',
+        usHeader: 'Mest Tire',
+        rows: [
+          { them: '3+ middlemen between factory and buyer — each adding margin', us: 'Direct from our factory. Zero intermediary markups, ever.' },
+          { them: 'Lead times quoted loosely, missed regularly', us: '25–35 days confirmed before production starts — and we hold to it.' },
+          { them: 'Fixed catalog — no custom specs, take it or leave it', us: 'Custom compound, size, or mold. If we can engineer it, we build it.' },
+          { them: 'QC documentation on request, if they have it at all', us: 'Batch test reports ship with every order. No request needed.' },
+        ],
+      },
       ctaTitle: 'Ready to talk?',
       ctaBody: "Tell us your application and volume. We'll respond within 24 hours.",
       ctaBtn1: 'Send an Inquiry',
@@ -218,6 +233,19 @@ export const translations = {
         { name: 'USA Office', location: 'Saint Jo, Texas, USA' },
         { name: 'Australia Office', location: 'Melbourne, VIC, Australia' },
       ],
+      distributor: {
+        tag: 'Partnership Opportunity',
+        title: 'Become a Mest Tire Distributor',
+        body: "We're expanding our distribution network across North America, Europe, and Asia-Pacific. If you're an established tire distributor or regional wholesaler looking to add a high-quality specialty tire line, we'd like to talk.",
+        benefits: [
+          { title: 'Territory Rights', desc: 'We work with one primary distributor per region — no internal competition on your turf.' },
+          { title: 'Factory-Direct Pricing', desc: 'Competitive margins with volume-based pricing tiers. No middlemen between you and the source.' },
+          { title: 'Full Product Access', desc: 'Access to our complete 11-category catalog including custom OEM manufacturing capability.' },
+          { title: 'Technical Support', desc: 'Dedicated account manager, product training, and co-branded marketing materials.' },
+        ],
+        cta: 'Apply for Distributorship',
+        ctaNote: 'We review all applications within 5 business days.',
+      },
     },
     form: {
       fullName: 'Full Name',
@@ -437,14 +465,17 @@ export const translations = {
         {
           title: 'Reducir Costes',
           body: 'Precios directos de fábrica, cotizaciones transparentes, sin intermediarios. Fabricamos lo que vendemos — usted paga el neumático, no las capas a su alrededor.',
+          badge: 'Directo de fábrica · Cero intermediarios',
         },
         {
           title: 'Ampliar su Gama',
           body: '11 categorías especializadas y capacidad de ingeniería a medida. ¿Necesita un tamaño que nadie tiene en stock? Lo fabricamos. ¿Expandiéndose a una nueva aplicación? La cubrimos.',
+          badge: '11 categorías + moldes a medida',
         },
         {
           title: 'Evitar Paradas',
           body: 'Calidad consistente, certificado ISO 9001, informes de ensayo con cada envío. Plazos de 25–35 días en pedidos estándar. Enviamos cuando lo prometemos.',
+          badge: 'ISO 9001 · Plazo 25–35 días',
         },
       ],
       proof: [
@@ -453,6 +484,18 @@ export const translations = {
         { value: '50+', label: 'Países atendidos' },
         { value: '24h', label: 'Respuesta a cotización' },
       ],
+      comparison: {
+        tag: 'La Diferencia Real',
+        title: 'Mest vs. La Alternativa',
+        themHeader: 'La mayoría de proveedores',
+        usHeader: 'Mest Tire',
+        rows: [
+          { them: '3+ intermediarios entre fábrica y comprador — cada uno añade margen', us: 'Directo de nuestra fábrica. Sin sobrecostes intermediarios, nunca.' },
+          { them: 'Plazos indicativos, incumplidos con frecuencia', us: '25–35 días confirmados antes de iniciar producción — y lo cumplimos.' },
+          { them: 'Catálogo fijo — sin especificaciones personalizadas', us: 'Compuesto, tamaño o molde a medida. Si podemos ingeniarlo, lo fabricamos.' },
+          { them: 'Documentación de control de calidad bajo petición, si existe', us: 'Informes de ensayo de partida incluidos en cada pedido. Sin solicitarlos.' },
+        ],
+      },
       ctaTitle: '¿Listo para hablar?',
       ctaBody: 'Cuéntenos su aplicación y volumen. Respondemos en 24 horas.',
       ctaBtn1: 'Enviar una Consulta',
@@ -493,6 +536,19 @@ export const translations = {
         { name: 'Oficina EE. UU.', location: 'Saint Jo, Texas, EE. UU.' },
         { name: 'Oficina Australia', location: 'Melbourne, VIC, Australia' },
       ],
+      distributor: {
+        tag: 'Oportunidad de Asociación',
+        title: 'Conviértase en Distribuidor de Mest Tire',
+        body: 'Estamos expandiendo nuestra red de distribución en Norteamérica, Europa y Asia-Pacífico. Si es un distribuidor de neumáticos establecido o mayorista regional que busca agregar una línea de neumáticos especializados de alta calidad, nos gustaría hablar.',
+        benefits: [
+          { title: 'Derechos de Territorio', desc: 'Trabajamos con un distribuidor principal por región, sin competencia interna en su área.' },
+          { title: 'Precios de Fábrica Directos', desc: 'Márgenes competitivos con niveles de precios por volumen. Sin intermediarios entre usted y la fuente.' },
+          { title: 'Acceso Completo al Catálogo', desc: 'Acceso a nuestro catálogo completo de 11 categorías, incluida la capacidad de fabricación OEM personalizada.' },
+          { title: 'Soporte Técnico', desc: 'Gerente de cuenta dedicado, capacitación en productos y materiales de marketing con marca compartida.' },
+        ],
+        cta: 'Solicitar Distribución',
+        ctaNote: 'Revisamos todas las solicitudes en 5 días hábiles.',
+      },
     },
     form: {
       fullName: 'Nombre Completo',
@@ -712,14 +768,17 @@ export const translations = {
         {
           title: 'Снижать затраты',
           body: 'Цены напрямую с завода, прозрачные коммерческие предложения, без наценок посредников. Мы производим то, что продаём — вы платите за шину, а не за цепочку вокруг неё.',
+          badge: 'Напрямую с завода · Без посредников',
         },
         {
           title: 'Расширять ассортимент',
           body: '11 специальных категорий и возможность нестандартного проектирования. Нужен размер, которого нет в наличии? Сделаем. Выходите в новое применение? Покроем.',
+          badge: '11 категорий + пресс-формы на заказ',
         },
         {
           title: 'Избегать простоев',
           body: 'Стабильное качество, сертификат ISO 9001, отчёты об испытаниях партии с каждой поставкой. Срок производства стандартных заказов — 25–35 дней. Отгружаем в срок.',
+          badge: 'ISO 9001 · Срок 25–35 дней',
         },
       ],
       proof: [
@@ -728,6 +787,18 @@ export const translations = {
         { value: '50+', label: 'Стран обслуживается' },
         { value: '24ч', label: 'Ответ на запрос' },
       ],
+      comparison: {
+        tag: 'Реальное отличие',
+        title: 'Mest vs. Альтернатива',
+        themHeader: 'Большинство поставщиков',
+        usHeader: 'Mest Tire',
+        rows: [
+          { them: '3+ посредника между заводом и покупателем — каждый добавляет наценку', us: 'Напрямую с нашего завода. Без наценок посредников — никогда.' },
+          { them: 'Сроки — приблизительные, нарушаются регулярно', us: '25–35 дней, подтверждённых до начала производства — и мы их держим.' },
+          { them: 'Фиксированный каталог — никаких нестандартных спецификаций', us: 'Состав, размер или пресс-форма на заказ. Если можем спроектировать — сделаем.' },
+          { them: 'Документация по качеству — по запросу, если вообще есть', us: 'Отчёты испытаний партии прилагаются к каждому заказу. Без запросов.' },
+        ],
+      },
       ctaTitle: 'Готовы поговорить?',
       ctaBody: 'Сообщите применение и объём. Ответим в течение 24 часов.',
       ctaBtn1: 'Отправить запрос',
@@ -768,6 +839,19 @@ export const translations = {
         { name: 'Офис в США', location: 'Сейнт-Джо, Техас, США' },
         { name: 'Офис в Австралии', location: 'Мельбурн, Виктория, Австралия' },
       ],
+      distributor: {
+        tag: 'Партнёрская программа',
+        title: 'Станьте дистрибьютором Mest Tire',
+        body: 'Мы расширяем дистрибьюторскую сеть в Северной Америке, Европе и Азиатско-Тихоокеанском регионе. Если вы — устоявшийся дистрибьютор шин или региональный оптовик, желающий добавить качественную линейку специальных шин, мы готовы к разговору.',
+        benefits: [
+          { title: 'Права на территорию', desc: 'Мы работаем с одним основным дистрибьютором в регионе — без внутренней конкуренции на вашей территории.' },
+          { title: 'Прямые заводские цены', desc: 'Конкурентные наценки с объёмными ценовыми уровнями. Без посредников между вами и производителем.' },
+          { title: 'Полный доступ к каталогу', desc: 'Доступ ко всему каталогу из 11 категорий, включая возможность изготовления по заказу OEM.' },
+          { title: 'Техническая поддержка', desc: 'Персональный менеджер, обучение по продуктам и совместные маркетинговые материалы.' },
+        ],
+        cta: 'Подать заявку на дистрибьюцию',
+        ctaNote: 'Мы рассматриваем все заявки в течение 5 рабочих дней.',
+      },
     },
     form: {
       fullName: 'Полное имя',
